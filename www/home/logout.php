@@ -12,6 +12,8 @@ if($logged_in) {
 	
 	session_destroy();
 	
+	header("Location:../index.php");
+	
 } else {
 	
 	header("Location:../index.php");

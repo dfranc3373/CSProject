@@ -1,10 +1,10 @@
 <?php
 
-$file = "";//for css and images and include
+$file = "../";//for css and images and include
 
 $nav = "";
 
-require_once("include.php");
+require_once($file . "include.php");
 
 @session_start();
 
@@ -27,13 +27,11 @@ if($logged_in) {
 	
 	$user_id = $_SESSION['user_id'];
 	$smarty->assign('user_id', $user_id);
-
-	header("Location: ./home/");
-
+	
+} else {
+	
+	header("Location: ../index.php");
+	
 }
-
-$smarty->assign("username", $username);
-
-$smarty->assign("user_id", $user_id);
 
 ?>
