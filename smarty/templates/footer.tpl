@@ -1,4 +1,4 @@
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="{$file}bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 
