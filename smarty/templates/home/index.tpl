@@ -1,6 +1,6 @@
 {include file="home/header.tpl"}
 
-<div style="color: #FFFFFF; background: url('http://today.ttu.edu/wp-content/gallery/tulips-in-bloom-2013/tulips-amdin-horiz2-2013.jpg');" align="center">
+<div align="center" style="color: rgb(255, 255, 255); background: url('{$file}images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100%;">
 
 <button type="button" class="btn btn-default disabled" style="margin-top: 100px; opacity: .89;">
 

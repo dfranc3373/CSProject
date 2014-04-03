@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-03-25 17:46:39
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-03 01:45:25
          compiled from "/var/www/database/smarty/templates/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2858739635331f57e0ae424-38957050%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8cde557d5e912fb75c8522f60a6240eb3dbcf94b' => 
     array (
       0 => '/var/www/database/smarty/templates/index.tpl',
-      1 => 1395783994,
+      1 => 1396503924,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5331f57e0c3306_33397564')) {function content_5331f57e0c3306_33397564($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
-<div style="color: #FFFFFF; background: url('http://today.ttu.edu/wp-content/gallery/tulips-in-bloom-2013/tulips-amdin-horiz2-2013.jpg');" align="center">
+<div align="center" style="color: rgb(255, 255, 255); background: url(&quot;http://today.ttu.edu/wp-content/gallery/tulips-in-bloom-2013/tulips-amdin-horiz2-2013.jpg&quot;) repeat fixed center 0px transparent;">
 
 <button type="button" class="btn btn-default disabled" style="margin-top: 100px; opacity: .89;">
 

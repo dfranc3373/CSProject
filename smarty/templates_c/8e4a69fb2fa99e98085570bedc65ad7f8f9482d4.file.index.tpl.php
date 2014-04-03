@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-03-26 11:57:38
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-03 02:03:12
          compiled from "/var/www/database/smarty/templates/home/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20923434545332453313b023-72847301%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8e4a69fb2fa99e98085570bedc65ad7f8f9482d4' => 
     array (
       0 => '/var/www/database/smarty/templates/home/index.tpl',
-      1 => 1395849457,
+      1 => 1396504984,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_53324533193489_30247376',
   'variables' => 
   array (
+    'file' => 0,
     'username' => 0,
   ),
   'has_nocache_code' => false,
@@ -26,7 +27,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_53324533193489_30247376')) {function content_53324533193489_30247376($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("home/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
-<div style="color: #FFFFFF; background: url('http://today.ttu.edu/wp-content/gallery/tulips-in-bloom-2013/tulips-amdin-horiz2-2013.jpg');" align="center">
+<div align="center" style="color: rgb(255, 255, 255); background: url('<?php echo $_smarty_tpl->tpl_vars['file']->value;?>
+images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100%;">
 
 <button type="button" class="btn btn-default disabled" style="margin-top: 100px; opacity: .89;">
 
