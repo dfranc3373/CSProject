@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-03 01:52:25
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-09 19:17:10
          compiled from "/var/www/database/smarty/templates/home/add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17745139355332f8f8de6689-63153642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fa0731e912b2b86941e3733f095a6062942f80a0' => 
     array (
       0 => '/var/www/database/smarty/templates/home/add_instructor.tpl',
-      1 => 1395951318,
+      1 => 1396824982,
       2 => 'file',
     ),
   ),
@@ -33,7 +33,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 
 <button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>
-
+	
+	<form method="POST" action="add_instructor2.php">
+		
+		
+	</form>
+	
 <div align="center" style="font-size: 19px;">Noah Metzger</div>
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>
 <div align="center" style="font-size: 19px;">Derrick Franco</div>
