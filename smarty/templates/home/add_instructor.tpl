@@ -66,7 +66,7 @@
 
 </div>
 
-<button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1></button>
+<button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>
 
 <div align="center" style="font-size: 19px;">Noah Metzger</div>
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>

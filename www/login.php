@@ -26,7 +26,7 @@ $string1 = "vnr3uh43h983hfhhuhf548";//password
 $string2 = "pleasedontmakeamess";
 $password = $_POST['password'];
 $password = md5($password);//md5
-echo $password = md5($string1.md5($string1.$password.$string2));//add the extra info
+$password = md5($string1.md5($string1.$password.$string2));//add the extra info
 
 $password_check = "SELECT `password` FROM `users` WHERE `username` = :username";
 
@@ -63,3 +63,5 @@ if($password == $password_from_database->password) {
 	header("Location: index.php");	
 	
 }
+
+?>
