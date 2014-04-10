@@ -2,7 +2,7 @@
 <head>
 
 <!-- Add the following three tags inside head. -->
-<meta itemprop="name" content="Texas TEch Project">
+<meta itemprop="name" content="Texas Tech Project">
 <meta itemprop="description" content="">
 <meta itemprop="image" content="{$file}images/banner.png">
 	<script src="{$file}jquery-1.9.1.js" type="text/javascript"></script>
@@ -14,7 +14,9 @@
       <script src="bootstrap/js/html5shiv.js"></script>
       <script src="bootstrap/js/respond.min.js"></script>
     <![endif]-->
-
+    
+    <script src="https://json-sans-eval.googlecode.com/files/json-minified.js"></script>
+    
 <meta name="description" content="">
 <title>Texas Tech Computer Science System</title>
 
