@@ -24,18 +24,16 @@
 <table>
 	<tr>
 		<td class="tablelable">
-			User ID
-		</td>
-		<td>
-			<input type="text" id="userid" name="userid" class="form-control tableinput">
-		</td>
-		
-		
-		<td class="tablelable">
 			User Name
 		</td>
 		<td>
 			<input type="text" id="username" name="username" class="form-control tableinput">
+		</td>
+		<td class="tablelable">
+			Email
+		</td>
+		<td>
+			<input type="text" id="email" name="email" class="form-control tableinput">
 		</td>
 	</tr>
 	<tr>
@@ -83,14 +81,6 @@
 		</td>
 		<td>
 			<input type="text" id="type" name="type" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td class="tablelable">
-			Email
-		</td>
-		<td colspan="3">
-			<input type="text" id="email" name="email" class="form-control tableinput long">
 		</td>
 	</tr>
 </table>
