@@ -26,7 +26,7 @@ if(!isset($_POST['firstname']) || !isset($_POST['lastname']) || !isset($_POST['u
 	
 	$instructor = $mysql->prepare("INSERT INTO `instructors` ('user_id', 'type', 'title', 'tenured', 'distribution_preference', 'date_joined') VALUES ('".$id."', :type, :title, :tenured, '1', '".date("m/d/y", time())."')");
 	
-	$instructor->execute(array("username" => $_POST['username'], "password" => $password, "firstname" => $_POST['firstname'], "lastname" => $_POST['lastname'], "email" => $_POST['email']));
+	$instructor->execute(array("type" => $_POST['type'], "title" => $_POST['title'], "tenured" => $_POST['tenured']));
 	
 	if($sth && $instructor) {
 		

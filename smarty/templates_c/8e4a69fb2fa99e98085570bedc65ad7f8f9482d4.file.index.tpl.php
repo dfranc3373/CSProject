@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-03 02:03:12
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 18:24:12
          compiled from "/var/www/database/smarty/templates/home/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20923434545332453313b023-72847301%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8e4a69fb2fa99e98085570bedc65ad7f8f9482d4' => 
     array (
       0 => '/var/www/database/smarty/templates/home/index.tpl',
-      1 => 1396504984,
+      1 => 1398637308,
       2 => 'file',
     ),
   ),
@@ -57,7 +57,11 @@ images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100
 	
 	<br />
 	
-	<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Class</button>
+	<a href="add_course.php">
+	
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Class</button>
+	
+	</a>
 	
 	<br />
 	

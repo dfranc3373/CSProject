@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-24 01:21:56
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 18:24:15
          compiled from "/var/www/database/smarty/templates/home/add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17745139355332f8f8de6689-63153642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fa0731e912b2b86941e3733f095a6062942f80a0' => 
     array (
       0 => '/var/www/database/smarty/templates/home/add_instructor.tpl',
-      1 => 1397089933,
+      1 => 1398637308,
       2 => 'file',
     ),
   ),
@@ -26,69 +26,107 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <h1>Add Instructor</h1>
 
-<div style="width: 800px; font-size: 30px;" align="center">
+<div style="width: 800px; font-size: 14px;" align="center">
+	
+	<form method="POST" action="add_instructor2.php">
+
+
+	<table>
+
+	</table>
+
+
+<style>
+.tableinput{ height:25px; width: 150px; margin:2px; margin-left:5px; margin-right:20px; padding:2px; text-align:center;}
+.long{ width:425px;}
+.tablelable{ width:100px; text-align:right; }
+</style>
+
+	
+<table>
+	<tr>
+		<td class="tablelable">
+			User ID
+		</td>
+		<td>
+			<input type="text" id="userid" name="userid" class="form-control tableinput">
+		</td>
 		
-		<form method="POST" action="add_instructor2.php">
 		
-		Firstname:
+		<td class="tablelable">
+			User Name
+		</td>
+		<td>
+			<input type="text" id="username" name="username" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Title
+		</td>
+		<td>
+			<input type="text" id="title" name="title" class="form-control tableinput">
+		</td>
+
 		
-		<br />
-		
-		<input type="text" id="firstname" name="firstname" class="form-control">
-		
-		Lastname:
-		
-		<br />
-		
-		<input type="text" id="lastname" name="lastname" class="form-control">
-		
-		Username:
-		
-		<br />
-		
-		<input type="text" id="username" name="username" class="form-control">
-		
-		Password:
-		
-		<br />
-		
-		<input type="text" id="password" name="password" class="form-control">
-		
-		Email:
-		
-		<br />
-		
-		<input type="text" id="email" name="email" class="form-control">
-		
-		Type:
-		
-		<br />
-		
-		<input type="text" id="type" name="type" class="form-control">
-		
-		Title:
-		
-		<br />
-		
-		<input type="text" id="title" name="title" class="form-control">
-		
-		Tenured:
-		
-		<br />
-		
-		<input type="text" id="tentured" name="tenured" class="form-control">
-		
-		<br />
-		
-		<input type="submit" value="Add Proffessor">
+		<td class="tablelable">
+			Tenured
+		</td>
+		<td>
+			<input type="text" id="tenured" name="tenured" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			First Name
+		</td>
+		<td>
+			<input type="text" id="firstname" name="firstname" class="form-control tableinput">
+		</td>
+
+		<td class="tablelable">
+			Last Name
+		</td>
+		<td>
+			<input type="text" id="lastname" name="lastname" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Password
+		</td>
+		<td>
+			<input type="text" id="password" name="password" class="form-control tableinput">
+		</td>
+	
+	
+		<td class="tablelable">
+			Type
+		</td>
+		<td>
+			<input type="text" id="type" name="type" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Email
+		</td>
+		<td colspan="3">
+			<input type="text" id="email" name="email" class="form-control tableinput long">
+		</td>
+	</tr>
+</table>
+
+
+		<input type="submit" value="Add Professor" class="btn btn-primary" style="margin-top:15px;">
 		
 	</form>
 	
-	</div>
+</div>
 
 </div>
 
-<button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>
+<button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1></button>
 
 <div align="center" style="font-size: 19px;">Noah Metzger</div>
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>
