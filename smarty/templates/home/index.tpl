@@ -28,7 +28,11 @@
 	
 	<br />
 	
-	<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Class</button>
+	<a href="add_course.php">
+	
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Class</button>
+	
+	</a>
 	
 	<br />
 	
