@@ -1,19 +1,5 @@
 <?php
 
-/*
- * 				var json = jsonParse(result);
-            	
-            	if(json.InstructorAdded == "true") {
- * 
- * 					alert(json.message);
- * 
-            	} else {
-            		
-            		alert(json.message);
-            		
-            	}
- */
-
 include_once('header.php');
 
 if(!isset($_POST['firstname']) || !isset($_POST['lastname']) || !isset($_POST['username']) || !isset($_POST['password']) || !isset($_POST['email']) || !isset($_POST['type']) || !isset($_POST['title']) || !isset($_POST['tenured'])) {
