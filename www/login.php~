@@ -78,7 +78,7 @@ if($password == $password_from_database->password) {
 
 	}
 	
-	header("Location: home/instructors/index.php");
+	header("Location: home/index.php");
 	
 	exit();
 	

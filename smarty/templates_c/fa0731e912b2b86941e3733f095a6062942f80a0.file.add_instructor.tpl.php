@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 18:24:15
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 19:17:55
          compiled from "/var/www/database/smarty/templates/home/add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17745139355332f8f8de6689-63153642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fa0731e912b2b86941e3733f095a6062942f80a0' => 
     array (
       0 => '/var/www/database/smarty/templates/home/add_instructor.tpl',
-      1 => 1398637308,
+      1 => 1398639054,
       2 => 'file',
     ),
   ),
@@ -132,4 +132,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>
 <div align="center" style="font-size: 19px;">Derrick Franco</div>
 
-</button><?php }} ?>
+</button>
+<?php }} ?>
