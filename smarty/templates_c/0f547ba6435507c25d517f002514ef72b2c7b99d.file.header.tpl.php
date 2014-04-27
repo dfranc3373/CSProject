@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-03-25 23:13:50
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-24 01:21:49
          compiled from "/var/www/database/smarty/templates/home/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1089487663533245331987c3-79456802%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0f547ba6435507c25d517f002514ef72b2c7b99d' => 
     array (
       0 => '/var/www/database/smarty/templates/home/header.tpl',
-      1 => 1395803627,
+      1 => 1397092845,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <head>
 
 <!-- Add the following three tags inside head. -->
-<meta itemprop="name" content="Texas TEch Project">
+<meta itemprop="name" content="Texas Tech Project">
 <meta itemprop="description" content="">
 <meta itemprop="image" content="<?php echo $_smarty_tpl->tpl_vars['file']->value;?>
 images/banner.png">
@@ -43,7 +43,9 @@ bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <script src="bootstrap/js/html5shiv.js"></script>
       <script src="bootstrap/js/respond.min.js"></script>
     <![endif]-->
-
+    
+    <script src="https://json-sans-eval.googlecode.com/files/json-minified.js"></script>
+    
 <meta name="description" content="">
 <title>Texas Tech Computer Science System</title>
 

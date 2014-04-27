@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-09 20:31:23
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-24 01:21:56
          compiled from "/var/www/database/smarty/templates/home/add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17745139355332f8f8de6689-63153642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fa0731e912b2b86941e3733f095a6062942f80a0' => 
     array (
       0 => '/var/www/database/smarty/templates/home/add_instructor.tpl',
-      1 => 1397089877,
+      1 => 1397089933,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		
 		<form method="POST" action="add_instructor2.php">
 		
-		<input type="text" id="firstname" name="firstname" class="form-control" placeholder="Firstname">
+		Firstname:
+		
+		<br />
+		
+		<input type="text" id="firstname" name="firstname" class="form-control">
 		
 		Lastname:
 		
