@@ -71,15 +71,6 @@
 	</tr>
 	<tr>
 		<td class="tablelable">
-			Email
-		</td>
-		<td colspan="3">
-			<input type="text" id="email" name="email" class="form-control tableinput long">
-		</td>
-
-		
-		<tr>
-		<td class="tablelable">
 			Password
 		</td>
 		<td>
@@ -92,6 +83,14 @@
 		</td>
 		<td>
 			<input type="text" id="type" name="type" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Email
+		</td>
+		<td colspan="3">
+			<input type="text" id="email" name="email" class="form-control tableinput long">
 		</td>
 	</tr>
 </table>

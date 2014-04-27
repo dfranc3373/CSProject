@@ -1,12 +1,12 @@
 <?php
 
-require_once('/home/administrator/Smarty-3.1.12/libs/Smarty.class.php');
+require_once('D:\Program Files\Smarty-3.1.12\libs\Smarty.class.php');
 
 $smarty = new Smarty();
 
-$smarty->setTemplateDir('/var/www/database/smarty/templates/');
-$smarty->setCompileDir('/var/www/database/smarty/templates_c/');
-$smarty->setConfigDir('/var/www/database/smarty/configs/');
-$smarty->setCacheDir('/var/www/database/smarty/cache/');
+$smarty->setTemplateDir('D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject/smarty/templates/');
+$smarty->setCompileDir('D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject/smarty/templates_c/');
+$smarty->setConfigDir('D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject/smarty/configs/');
+$smarty->setCacheDir('D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject/smarty/cache/');
 
 ?>

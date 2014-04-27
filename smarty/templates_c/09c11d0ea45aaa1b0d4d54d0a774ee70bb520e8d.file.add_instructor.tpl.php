@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 22:46:08
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 22:50:48
          compiled from "D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject\smarty\templates\home\add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1773535d5cb7367757-55152186%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '09c11d0ea45aaa1b0d4d54d0a774ee70bb520e8d' => 
     array (
       0 => 'D:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\CSProject\\smarty\\templates\\home\\add_instructor.tpl',
-      1 => 1398631566,
+      1 => 1398631846,
       2 => 'file',
     ),
   ),
@@ -93,15 +93,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	</tr>
 	<tr>
 		<td class="tablelable">
-			Email
-		</td>
-		<td colspan="3">
-			<input type="text" id="email" name="email" class="form-control tableinput long">
-		</td>
-
-		
-		<tr>
-		<td class="tablelable">
 			Password
 		</td>
 		<td>
@@ -114,6 +105,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</td>
 		<td>
 			<input type="text" id="type" name="type" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Email
+		</td>
+		<td colspan="3">
+			<input type="text" id="email" name="email" class="form-control tableinput long">
 		</td>
 	</tr>
 </table>
