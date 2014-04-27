@@ -15,21 +15,23 @@
 
 
 <style>
-.tableinput{ height:25px; width: 125px; margin:2px; padding:2px ;}
+.tableinput{ height:25px; width: 150px; margin:2px; margin-left:5px; margin-right:20px; padding:2px; text-align:center;}
+.long{ width:425px;}
+.tablelable{ width:100px; text-align:right; }
 </style>
 
 	
 <table>
 	<tr>
-		<td width=100px>
+		<td class="tablelable">
 			User ID
 		</td>
 		<td>
 			<input type="text" id="userid" name="userid" class="form-control tableinput">
 		</td>
-	</tr>
-	<tr>
-		<td width=100px>
+		
+		
+		<td class="tablelable">
 			User Name
 		</td>
 		<td>
@@ -37,47 +39,15 @@
 		</td>
 	</tr>
 	<tr>
-		<td width=100px>
+		<td class="tablelable">
 			Title
 		</td>
 		<td>
 			<input type="text" id="title" name="title" class="form-control tableinput">
 		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			First Name
-		</td>
-		<td>
-			<input type="text" id="firstname" name="firstname" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			Last Name
-		</td>
-		<td>
-			<input type="text" id="lastname" name="lastname" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			Password
-		</td>
-		<td>
-			<input type="text" id="password" name="password" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			Email
-		</td>
-		<td>
-			<input type="text" id="email" name="email" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
+
+		
+		<td class="tablelable">
 			Tenured
 		</td>
 		<td>
@@ -85,7 +55,39 @@
 		</td>
 	</tr>
 	<tr>
-		<td width=100px>
+		<td class="tablelable">
+			First Name
+		</td>
+		<td>
+			<input type="text" id="firstname" name="firstname" class="form-control tableinput">
+		</td>
+
+		<td class="tablelable">
+			Last Name
+		</td>
+		<td>
+			<input type="text" id="lastname" name="lastname" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Email
+		</td>
+		<td colspan="3">
+			<input type="text" id="email" name="email" class="form-control tableinput long">
+		</td>
+
+		
+		<tr>
+		<td class="tablelable">
+			Password
+		</td>
+		<td>
+			<input type="text" id="password" name="password" class="form-control tableinput">
+		</td>
+	
+	
+		<td class="tablelable">
 			Type
 		</td>
 		<td>
@@ -95,7 +97,7 @@
 </table>
 
 
-		<input type="submit" value="Add Professor" class="btn btn-primary">
+		<input type="submit" value="Add Professor" class="btn btn-primary" style="margin-top:15px;">
 		
 	</form>
 	

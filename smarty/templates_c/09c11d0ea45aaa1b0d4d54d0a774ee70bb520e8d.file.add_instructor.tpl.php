@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 22:03:53
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 22:46:08
          compiled from "D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject\smarty\templates\home\add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1773535d5cb7367757-55152186%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '09c11d0ea45aaa1b0d4d54d0a774ee70bb520e8d' => 
     array (
       0 => 'D:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\CSProject\\smarty\\templates\\home\\add_instructor.tpl',
-      1 => 1398629031,
+      1 => 1398631566,
       2 => 'file',
     ),
   ),
@@ -37,21 +37,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <style>
-.tableinput{ height:25px; width: 125px; margin:2px; padding:2px ;}
+.tableinput{ height:25px; width: 150px; margin:2px; margin-left:5px; margin-right:20px; padding:2px; text-align:center;}
+.long{ width:425px;}
+.tablelable{ width:100px; text-align:right; }
 </style>
 
 	
 <table>
 	<tr>
-		<td width=100px>
+		<td class="tablelable">
 			User ID
 		</td>
 		<td>
 			<input type="text" id="userid" name="userid" class="form-control tableinput">
 		</td>
-	</tr>
-	<tr>
-		<td width=100px>
+		
+		
+		<td class="tablelable">
 			User Name
 		</td>
 		<td>
@@ -59,47 +61,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</td>
 	</tr>
 	<tr>
-		<td width=100px>
+		<td class="tablelable">
 			Title
 		</td>
 		<td>
 			<input type="text" id="title" name="title" class="form-control tableinput">
 		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			First Name
-		</td>
-		<td>
-			<input type="text" id="firstname" name="firstname" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			Last Name
-		</td>
-		<td>
-			<input type="text" id="lastname" name="lastname" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			Password
-		</td>
-		<td>
-			<input type="text" id="password" name="password" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
-			Email
-		</td>
-		<td>
-			<input type="text" id="email" name="email" class="form-control tableinput">
-		</td>
-	</tr>
-	<tr>
-		<td width=100px>
+
+		
+		<td class="tablelable">
 			Tenured
 		</td>
 		<td>
@@ -107,7 +77,39 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</td>
 	</tr>
 	<tr>
-		<td width=100px>
+		<td class="tablelable">
+			First Name
+		</td>
+		<td>
+			<input type="text" id="firstname" name="firstname" class="form-control tableinput">
+		</td>
+
+		<td class="tablelable">
+			Last Name
+		</td>
+		<td>
+			<input type="text" id="lastname" name="lastname" class="form-control tableinput">
+		</td>
+	</tr>
+	<tr>
+		<td class="tablelable">
+			Email
+		</td>
+		<td colspan="3">
+			<input type="text" id="email" name="email" class="form-control tableinput long">
+		</td>
+
+		
+		<tr>
+		<td class="tablelable">
+			Password
+		</td>
+		<td>
+			<input type="text" id="password" name="password" class="form-control tableinput">
+		</td>
+	
+	
+		<td class="tablelable">
 			Type
 		</td>
 		<td>
@@ -117,7 +119,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </table>
 
 
-		<input type="submit" value="Add Professor" class="btn btn-primary">
+		<input type="submit" value="Add Professor" class="btn btn-primary" style="margin-top:15px;">
 		
 	</form>
 	
