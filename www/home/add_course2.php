@@ -18,7 +18,7 @@ if(!isset($_POST['course']) || !isset($_POST['section']) || !isset($_POST['secti
 	
 	if($sth) {
 		
-		$course_id = $sth->lastInsertId();
+		$course_id = $mysql->lastInsertId();
 		
 		$instructors_array = array();
 		
