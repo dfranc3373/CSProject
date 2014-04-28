@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 23:05:04
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:22:19
          compiled from "D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject\smarty\templates\home\add_course.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20715535d5f8ba9ceb8-63503641%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7a9d9cb05e919fee5f5c01e1fba81241269dec20' => 
     array (
       0 => 'D:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\CSProject\\smarty\\templates\\home\\add_course.tpl',
-      1 => 1398632696,
+      1 => 1398654876,
       2 => 'file',
     ),
   ),
@@ -24,6 +24,58 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div align="center">
 
+<script>
+	
+	$( document ).ready(function() {
+		$('#addCourse').submit(function (event) {
+			event.preventDefault();
+			if (checkValid()==true){
+				sendData();
+			}
+		});
+	});
+	
+	function checkValid(){
+		var valid = true;
+		$( ".tableinput" ).each(function() {
+			if ($( this ).val() == ""){
+				showMsg("Please fill in all fields",false);
+				valid=false;
+			}
+		});
+		return valid;
+	}
+
+	function sendData(){
+		dataString = $("#addCourse").serialize();
+		$.ajax({
+			type:"POST",
+			url:"./add_course2.php",
+			data:dataString,
+			dataType: 'json',
+
+			success:function (data) {
+				showMsg(data.message, data.InstructorAdded );
+			}
+		});
+	}
+	
+	function showMsg(msg, status){
+		var color = "#f00";
+		if (status){
+			color = "#0f0";
+		}
+		
+		$("#results").hide();
+		$("#result").html(msg);
+		$("#result").css({ "background-color": color})
+		$("#results").show("slow");
+	}
+</script>
+
+<div id="result" style="text-align:center;"></div>
+
+
 <h1>Add Course</h1>
 
 <style>
@@ -32,7 +84,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 .tablelable{ width:150px; text-align:right; }
 </style>
 
-	
+<form method="POST" action="add_course2.php" id="addCourse" >
 <table>
 	<tr>
 		<td class="tablelable">
@@ -67,7 +119,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</td>
 	</tr>
 	
-		<tr>
+	<tr>
+		<td class="tablelable">
+			Enrollment
+		</td>
+		<td>
+			<input type="text" id="enrollment" name="enrollment" class="form-control tableinput">
+		</td>
+	</tr>
+	
+	<tr>
 		<td class="tablelable">
 			Building
 		</td>
