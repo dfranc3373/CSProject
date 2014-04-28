@@ -1,4 +1,26 @@
-{include file="home/header.tpl"}
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:26:57
+         compiled from "D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject\smarty\templates\home\a_course_history.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:30977535dca816f0429-76445396%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'c8c9132583905ff734cbe553214a1af29d485d0a' => 
+    array (
+      0 => 'D:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\CSProject\\smarty\\templates\\home\\a_course_history.tpl',
+      1 => 1398654876,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '30977535dca816f0429-76445396',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_535dca81765744_98084155',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_535dca81765744_98084155')) {function content_535dca81765744_98084155($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("home/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
 
 <div align="center">
 
@@ -183,4 +205,4 @@
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>
 <div align="center" style="font-size: 19px;">Derrick Franco</div>
 
-</button>
+</button><?php }} ?>
