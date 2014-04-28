@@ -15,27 +15,55 @@
 	</button>
 	
 	<br />
-	
 	<br />
 	
-	<a href="add_instructor.php">
-	
-		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Instructor</button>
-		
+	<a href="a_course_history.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Course History for Instructor</button>
 	</a>
 	
 	<br />
 	
+	<a href="b_instructor_list.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Instructor List and Statistics</button>
+	</a>
+	
 	<br />
+
+	<a href="c_special_course_list.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Special Course List</button>
+	</a>
 	
-	<a href="add_course.php">
+	<br />
+
+	<a href="d_offering_history.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Offering History for Course</button>
+	</a>
 	
-		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Class</button>
-	
+	<br />
+
+	<a href="e_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Professor Preferences</button>
 	</a>
 	
 	<br />
 	
+	<a href="f_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Textbooks For Course</button>
+	</a>
+	
+	<br />
+	
+	<a href="g_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Summer Course List</button>
+	</a>
+	
+	<br />
+
+	<a href="h_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Enrollment Statistics</button>
+	</a>
+	
+	<br />
 	<br />
 	
 </div>
