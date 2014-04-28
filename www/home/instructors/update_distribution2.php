@@ -18,7 +18,7 @@ if(!isset($_POST['distribution'])) {
 
 	if($sth) {
 		
-		$array = array("message" => "Distribution UpdateDistribution" => "true");
+		$array = array("message" => "Distribution Updated",  "UpdateDistribution" => "true");
 				
 		echo json_encode($array);
 		

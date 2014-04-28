@@ -17,7 +17,7 @@
 	<br />
 	<br />
 	
-	<a href="course_preferences.php">
+	<a href="course_preference.php">
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Update Course Preferences</button>
 	</a>
 	

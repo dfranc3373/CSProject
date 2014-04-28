@@ -49,6 +49,8 @@ $('.preference_number').each(function(i) {
 
 });
 
+alert("Preferences Updated");
+
 }
 
 

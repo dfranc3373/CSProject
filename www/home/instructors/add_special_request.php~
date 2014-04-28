@@ -1,0 +1,9 @@
+<?php
+
+include_once('header.php');
+
+$smarty->display('home/instructors/add_special_reuqest.tpl');
+
+require($file . 'footer.php');
+
+?>

@@ -14,11 +14,11 @@ if(!isset($_POST['course_code']) || !isset($_POST['title']) || !isset($_POST['ju
 
 	$sth = $mysql->prepare("INSERT INTO `special_request` (`user_id`, `course_code`, `title`, `justification`) VALUES (:user_id, :course_code, :title, :justification)");
 
-	$sth->execute(array("user_id" => $_SESSION['user_id'], "course_code" => $_POST'course_code'], "title" => $_POST['title'], "justification" => $_POST['justification']));
+	$sth->execute(array("user_id" => $_SESSION['user_id'], "course_code" => $_POST['course_code'], "title" => $_POST['title'], "justification" => $_POST['justification']));
 
 	if($sth) {
 		
-		$array = array("message" => "Instructor Added", "AddRequest" => "true");
+		$array = array("message" => "Request Added", "AddRequest" => "true");
 				
 		echo json_encode($array);
 		

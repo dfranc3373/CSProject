@@ -1,4 +1,4 @@
-{include file="home/header.tpl"}
+{include file="home/instructors/header.tpl"}
 
 <link rel="stylesheet" href="{$file}themes/blue/style.css" type="text/css" media="print, projection, screen" />
 
