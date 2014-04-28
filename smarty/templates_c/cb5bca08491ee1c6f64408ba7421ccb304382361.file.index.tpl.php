@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 06:23:21
+=======
+<<<<<<< HEAD
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:25:45
+=======
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:11:28
+>>>>>>> c6341a3a73e86512336c82bb46da472291dd78f0
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
          compiled from "D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject\smarty\templates\home\bm\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16395535dc6e0e42d20-34111104%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +15,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cb5bca08491ee1c6f64408ba7421ccb304382361' => 
     array (
       0 => 'D:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\CSProject\\smarty\\templates\\home\\bm\\index.tpl',
+<<<<<<< HEAD
       1 => 1398658998,
+=======
+<<<<<<< HEAD
+      1 => 1398655376,
+=======
+      1 => 1398653705,
+>>>>>>> c6341a3a73e86512336c82bb46da472291dd78f0
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
       2 => 'file',
     ),
   ),
@@ -15,18 +31,35 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+<<<<<<< HEAD
   'version' => 'Smarty-3.1.12',
   'unifunc' => 'content_535dc6e0e98c44_89450063',
+=======
+<<<<<<< HEAD
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_535dc6e0e98c44_89450063',
+=======
+>>>>>>> c6341a3a73e86512336c82bb46da472291dd78f0
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
   'variables' => 
   array (
     'file' => 0,
     'username' => 0,
   ),
   'has_nocache_code' => false,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_535dc6e0e98c44_89450063',
+>>>>>>> c6341a3a73e86512336c82bb46da472291dd78f0
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_535dc6e0e98c44_89450063')) {function content_535dc6e0e98c44_89450063($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("home/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
+<<<<<<< HEAD
 <style>
 	.btn-block{
 		margin-top:2px!important;
@@ -36,6 +69,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div align="center" style="color: rgb(255, 255, 255); background: url('<?php echo $_smarty_tpl->tpl_vars['file']->value;?>
 images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100%;">
+=======
+<div align="center" style="color: rgb(255, 255, 255); background: url('<?php echo $_smarty_tpl->tpl_vars['file']->value;?>
+images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100%;">
+
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 <button type="button" class="btn btn-default disabled" style="margin-top: 100px; opacity: .89;">
 
 	<div style="text-shadow: 4px 0 10px #000000, 0 -1px 0 #000000;">
@@ -56,21 +94,34 @@ images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Course History for Instructor</button>
 	</a>
 	
+<<<<<<< HEAD
+=======
+	<br />
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 	
 	<a href="b_instructor_list.php">
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Instructor List and Statistics</button>
 	</a>
 	
+<<<<<<< HEAD
+=======
+	<br />
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 
 	<a href="c_special_course_list.php">
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Special Course List</button>
 	</a>
 	
+<<<<<<< HEAD
+=======
+	<br />
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 
 	<a href="d_offering_history.php">
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Offering History for Course</button>
 	</a>
 	
+<<<<<<< HEAD
 
 	<a href="e_prof_pref.php">
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Professor Preferences</button>
@@ -88,6 +139,29 @@ images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100
 	
 
 	<a href="h_enroll_stats.php">
+=======
+	<br />
+
+	<a href="e_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Professor Preferences</button>
+	</a>
+	
+	<br />
+	
+	<a href="f_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Textbooks For Course</button>
+	</a>
+	
+	<br />
+	
+	<a href="g_add_course.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Summer Course List</button>
+	</a>
+	
+	<br />
+
+	<a href="h_add_course.php">
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Enrollment Statistics</button>
 	</a>
 	

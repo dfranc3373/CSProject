@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 06:10:38
+=======
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:37:58
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
          compiled from "D:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\CSProject\smarty\templates\home\bm\a_course_history.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934535dca8e2ebdb3-57763318%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +11,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7ead31daae276cbfdda2e579f150332a12e00e06' => 
     array (
       0 => 'D:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\CSProject\\smarty\\templates\\home\\bm\\a_course_history.tpl',
+<<<<<<< HEAD
       1 => 1398658236,
+=======
+      1 => 1398656276,
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
       2 => 'file',
     ),
   ),
@@ -65,6 +73,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			data:dataString,
 
 			success:function (data) {
+<<<<<<< HEAD
 				$("#results").css({ "background-color": "bbb"})
 				$("#results").html(data);
 				$("#results").show();
@@ -82,6 +91,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		$("#results").css({ "background-color": color})
 		$("#results").show("slow");
 	}
+=======
+				$("#results").show();
+				$("#results").html(data);
+			}
+		});
+	}
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 </script>
   
 </div>
@@ -90,11 +106,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div align="center">
 
+<<<<<<< HEAD
 <h1>Instructor List</h1>
 
 <div style="width: 800px; font-size: 14px;" align="center">
 	
 	<form method="POST" action="a_course_history2" id="target" >
+=======
+<h1>Course History</h1>
+
+<div style="width: 800px; font-size: 14px;" align="center">
+	
+	<form method="POST" action="a_course_history2.php" id="target" >
+>>>>>>> a69cb9e0bc485fd91bb1c296ad34e7aa74fe9fae
 
 
 	<table>
