@@ -33,6 +33,7 @@
 		$.ajax({
 			type:"POST",
 			url:"./add_instructor2.php",
+			data:dataString,
 			dataType: 'json',
 
 			success:function (data) {
