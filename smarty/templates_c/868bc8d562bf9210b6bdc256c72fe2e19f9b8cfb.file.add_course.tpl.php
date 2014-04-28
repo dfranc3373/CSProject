@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:58:59
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 11:19:42
          compiled from "/var/www/database/smarty/templates/home/add_course.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1557674831535d926f07cce3-77001261%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '868bc8d562bf9210b6bdc256c72fe2e19f9b8cfb' => 
     array (
       0 => '/var/www/database/smarty/templates/home/add_course.tpl',
-      1 => 1398679125,
+      1 => 1398698373,
       2 => 'file',
     ),
   ),
@@ -106,6 +106,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<td>
 			<input type="text" id="section" name="section" class="form-control tableinput">
 		</td>
+
+		<td class="tablelable">
+			Title
+		</td>
+		<td>
+			<input type="text" id="title" name="title" class="form-control tableinput">
+		</td>
+
+		<td class="tablelable">
+			Semester
+		</td>
+		<td>
+			<input type="text" id="semester" name="semester" class="form-control tableinput">
+		</td>
+
 	</tr>
 	
 	<tr>

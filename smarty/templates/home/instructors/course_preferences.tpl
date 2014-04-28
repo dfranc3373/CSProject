@@ -100,7 +100,7 @@ alert("Preferences Updated");
     <td>{$c->end_time}</td> 
     <td>{$c->building}</td>
     <td>{$c->room}</td>
-    <td>{$c->ta_hour}</td>
+    <td>{$c->ta_hours}</td>
     <td>{$c->catalog_year}</td>
     <td>{$c->academic_year}</td>
     <td>

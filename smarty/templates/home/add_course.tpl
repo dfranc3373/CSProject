@@ -79,6 +79,21 @@
 		<td>
 			<input type="text" id="section" name="section" class="form-control tableinput">
 		</td>
+
+		<td class="tablelable">
+			Title
+		</td>
+		<td>
+			<input type="text" id="title" name="title" class="form-control tableinput">
+		</td>
+
+		<td class="tablelable">
+			Semester
+		</td>
+		<td>
+			<input type="text" id="semester" name="semester" class="form-control tableinput">
+		</td>
+
 	</tr>
 	
 	<tr>

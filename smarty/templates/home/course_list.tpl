@@ -59,7 +59,7 @@
     <td>{$c->room_capacity}</td>
     <td>{$c->enrollment}</td>
     <td>{$c->ta_grader}</td>
-    <td>{$c->ta_hour}</td>
+    <td>{$c->ta_hours}</td>
     <td>{$c->catalog_year}</td>
     <td>{$c->academic_year}</td>
 </tr>

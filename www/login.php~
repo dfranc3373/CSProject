@@ -64,7 +64,7 @@ if($password == $password_from_database->password) {
 
 		if($which_user->fetch()->is_manager == '1') {
 
-			header("Location: home/manager/index.php");
+			header("Location: home/bm/index.php");
 
 			exit();
 

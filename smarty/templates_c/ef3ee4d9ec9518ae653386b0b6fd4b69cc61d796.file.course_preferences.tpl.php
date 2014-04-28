@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 08:00:02
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 10:05:20
          compiled from "/var/www/database/smarty/templates/home/instructors/course_preferences.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:215875241535e30e448df52-67791543%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ef3ee4d9ec9518ae653386b0b6fd4b69cc61d796' => 
     array (
       0 => '/var/www/database/smarty/templates/home/instructors/course_preferences.tpl',
-      1 => 1398686392,
+      1 => 1398693917,
       2 => 'file',
     ),
   ),
@@ -147,7 +147,7 @@ $_smarty_tpl->tpl_vars['c']->_loop = true;
 </td>
     <td><?php echo $_smarty_tpl->tpl_vars['c']->value->room;?>
 </td>
-    <td><?php echo $_smarty_tpl->tpl_vars['c']->value->ta_hour;?>
+    <td><?php echo $_smarty_tpl->tpl_vars['c']->value->ta_hours;?>
 </td>
     <td><?php echo $_smarty_tpl->tpl_vars['c']->value->catalog_year;?>
 </td>

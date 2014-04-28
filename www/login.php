@@ -15,9 +15,9 @@ $sth = $mysql->prepare("SELECT * FROM `users` WHERE `username` = :username");
 $sth->execute(array(":username" => $_POST['username']));
 
 if($sth->rowCount() != 1) {
-	
-	header("Location:loginpage.php?error=User_Not_Registered&username=".$_POST['username']);
-	
+
+	header("Location: index.php");
+
 	exit();
 	
 }

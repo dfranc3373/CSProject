@@ -1,6 +1,6 @@
 <?php
 
-$file="../../";
+$file="../";
 
 require_once($file . "include.php");
 

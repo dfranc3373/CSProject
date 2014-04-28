@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 06:31:35
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 09:48:04
          compiled from "/var/www/database/smarty/templates/home/course_list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:845947602535e26ed26fa67-83801858%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '77689d1ae24476f010b5160e26f43df7423d0a90' => 
     array (
       0 => '/var/www/database/smarty/templates/home/course_list.tpl',
-      1 => 1398681093,
+      1 => 1398692880,
       2 => 'file',
     ),
   ),
@@ -104,7 +104,7 @@ $_smarty_tpl->tpl_vars['c']->_loop = true;
 </td>
     <td><?php echo $_smarty_tpl->tpl_vars['c']->value->ta_grader;?>
 </td>
-    <td><?php echo $_smarty_tpl->tpl_vars['c']->value->ta_hour;?>
+    <td><?php echo $_smarty_tpl->tpl_vars['c']->value->ta_hours;?>
 </td>
     <td><?php echo $_smarty_tpl->tpl_vars['c']->value->catalog_year;?>
 </td>
