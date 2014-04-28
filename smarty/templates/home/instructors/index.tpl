@@ -15,28 +15,36 @@
 	</button>
 	
 	<br />
-	
 	<br />
 	
-	<a href="add_instructor.php">
-	
-		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Instructor</button>
-		
+	<a href="update_course_preferences.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Update Course Preferences</button>
 	</a>
 	
 	<br />
-	
 	<br />
 	
-	<a href="add_course.php">
-	
-		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">New Class</button>
-	
+	<a href="update_disctribution.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Update Load Distribution Preferences</button>
 	</a>
 	
 	<br />
+	<br />
+	
+	<a href="add_special_request.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Add Special Course Request</button>
+	</a>
+
+	<br />
+	<br />
+	
+	<a href="course_list.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Show Courses / Edit Textbooks</button>
+	</a>
 	
 	<br />
+	<br />
+	
 	
 </div>
 
