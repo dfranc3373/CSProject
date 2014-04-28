@@ -2,6 +2,58 @@
 
 <div align="center">
 
+<script>
+	
+	$( document ).ready(function() {
+		$('#addCourse').submit(function (event) {
+			event.preventDefault();
+			if (checkValid()==true){
+				sendData();
+			}
+		});
+	});
+	
+	function checkValid(){
+		var valid = true;
+		$( ".tableinput" ).each(function() {
+			if ($( this ).val() == ""){
+				showMsg("Please fill in all fields",false);
+				valid=false;
+			}
+		});
+		return valid;
+	}
+
+	function sendData(){
+		dataString = $("#addCourse").serialize();
+		$.ajax({
+			type:"POST",
+			url:"./add_course2.php",
+			data:dataString,
+			dataType: 'json',
+
+			success:function (data) {
+				showMsg(data.message, data.InstructorAdded );
+			}
+		});
+	}
+	
+	function showMsg(msg, status){
+		var color = "#f00";
+		if (status){
+			color = "#0f0";
+		}
+		
+		$("#results").hide();
+		$("#result").html(msg);
+		$("#result").css({ "background-color": color})
+		$("#results").show("slow");
+	}
+</script>
+
+<div id="result" style="text-align:center;"></div>
+
+
 <h1>Add Course</h1>
 
 <style>
@@ -10,7 +62,7 @@
 .tablelable{ width:150px; text-align:right; }
 </style>
 
-	
+<form method="POST" action="add_course2.php" id="addCourse" >
 <table>
 	<tr>
 		<td class="tablelable">
@@ -45,7 +97,16 @@
 		</td>
 	</tr>
 	
-		<tr>
+	<tr>
+		<td class="tablelable">
+			Enrollment
+		</td>
+		<td>
+			<input type="text" id="enrollment" name="enrollment" class="form-control tableinput">
+		</td>
+	</tr>
+	
+	<tr>
 		<td class="tablelable">
 			Building
 		</td>
