@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 08:00:56
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 08:39:08
          compiled from "/var/www/database/smarty/templates/home/instructors/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:859288039535e42c2ec52f1-02031954%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '292563fe042abfd30b224dfd31e06e614648dea1' => 
     array (
       0 => '/var/www/database/smarty/templates/home/instructors/header.tpl',
-      1 => 1398686452,
+      1 => 1398688744,
       2 => 'file',
     ),
   ),
@@ -61,7 +61,7 @@ bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <span class="icon-bar"></span>
     </button>
     <a class="navbar-brand" href="<?php echo $_smarty_tpl->tpl_vars['nav']->value;?>
-index.php" style="margin-left: 40px;">Texas Tech Computer Science System</a>
+instructors/index.php" style="margin-left: 40px;">Texas Tech Computer Science System</a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">

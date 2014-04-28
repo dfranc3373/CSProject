@@ -31,7 +31,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="{$nav}index.php" style="margin-left: 40px;">Texas Tech Computer Science System</a>
+    <a class="navbar-brand" href="{$nav}instructors/index.php" style="margin-left: 40px;">Texas Tech Computer Science System</a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">

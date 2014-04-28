@@ -36,7 +36,7 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="{$nav}instructors/index.php">Home</a></li>
-      <li><a href="course_preference.php">Course Preferences</a></li>
+      <li><a href="course_preferences.php">Course Preferences</a></li>
       <li><a href="update_distribution.php">Update Distribution</a></li>
       <li><a href="add_special_request.php">Special Request</a></li>
       <li><a href="course_list.php">Course List</a></li>

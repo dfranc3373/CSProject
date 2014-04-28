@@ -44,8 +44,11 @@
 	
 	<br />
 	<br />
-	
-	
+
+<a href="add_textbook.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Add Textbook</button>
+	</a>
+
 </div>
 
 <button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>

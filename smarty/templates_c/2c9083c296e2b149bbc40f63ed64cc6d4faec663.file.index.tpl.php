@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 08:00:56
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 08:25:09
          compiled from "/var/www/database/smarty/templates/home/instructors/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:627003726535e30da754392-62733003%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2c9083c296e2b149bbc40f63ed64cc6d4faec663' => 
     array (
       0 => '/var/www/database/smarty/templates/home/instructors/index.tpl',
-      1 => 1398686455,
+      1 => 1398687637,
       2 => 'file',
     ),
   ),
@@ -73,8 +73,11 @@ images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100
 	
 	<br />
 	<br />
-	
-	
+
+<a href="add_textbook.php">
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 400px;">Add Textbook</button>
+	</a>
+
 </div>
 
 <button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>
