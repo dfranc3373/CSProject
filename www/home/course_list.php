@@ -8,11 +8,11 @@ $sth->setFetchMode(PDO::FETCH_OBJ);
 
 $sth->execute();
 
-$courses = $sth->fetch();
+$courses = $sth->fetchAll();
 
 $smarty->assign("courses", $courses);
 
-$smarty->display('home/course_list.php');
+$smarty->display('home/course_list.tpl');
 
 require($file . 'footer.php');
 

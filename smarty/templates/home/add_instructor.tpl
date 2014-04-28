@@ -76,13 +76,6 @@
 
 <table>
 	<tr>
-		<td class="tablelable">
-			User ID
-		</td>
-		<td>
-			<input type="text" id="userid" name="userid" class="form-control tableinput">
-		</td>
-		
 		
 		<td class="tablelable">
 			User Name

@@ -33,7 +33,7 @@
 			dataType: 'json',
 
 			success:function (data) {
-				showMsg(data.message, data.InstructorAdded );
+				showMsg(data.message, data.CourseAdded);
 			}
 		});
 	}
@@ -167,7 +167,28 @@
 		</td>
 	</tr>
 </table>
-	
+
+<br />
+
+Choose Proffesors for the Class:
+
+<br />
+
+<br />
+
+{foreach from=$instructors item=i}
+
+<input type="checkbox" value="{$i->user_id}" class="tableinput" name="instructors[]"> {$i->title} {$i->firstname} {$i->lastname}
+
+{/foreach}
+
+<br />
+
+<br />
+
+<br />
+
+<br />
 
 		<input type="submit" value="Add Course" class="btn btn-primary" style="margin-top:15px;">
 		

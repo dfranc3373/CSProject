@@ -4,7 +4,7 @@ include_once('header.php');
 
 if(!isset($_POST['course']) || !isset($_POST['section']) || !isset($_POST['section_capacity']) || !isset($_POST['start_time']) || !isset($_POST['end_time']) || !isset($_POST['building']) || !isset($_POST['room']) || !isset($_POST['room_capacity']) || !isset($_POST['enrollment']) || !isset($_POST['ta_grader']) || !isset($_POST['ta_hour']) || !isset($_POST['catalog_year']) || !isset($_POST['academic_year'])) {
 	
-	$array = array("message" => "Please fill out all the requested data", "ClassAdded" => "false");
+	$array = array("message" => "Please fill out all the requested data", "CourseAdded" => "false");
 				
 	echo json_encode($array);
 	
@@ -26,14 +26,14 @@ if(!isset($_POST['course']) || !isset($_POST['section']) || !isset($_POST['secti
 		
 		foreach($_POST['instructors'] as $i) {
 			
-			$instructor_query = $mysql->prepare("SELECT * FROM `instructors` WHERE `intructor_id` = :instructor_id");
+			$instructor_query = $mysql->prepare("SELECT * FROM `instructors` WHERE `user_id` = :user_id");
 			
 			$instructor_query->setFetchMode(PDO::FETCH_OBJ);
-			
-			$instructor_query->execute(array("instructor_id" => $i));
+
+			$instructor_query->execute(array("user_id" => $i));
 			
 			$instructor = $instructor_query->fetch();
-			
+
 			$instructor_add = $mysql->prepare("INSERT INTO `teaches` (`user_id`, `course_id`), VALUES(:user_id, :course_id)");
 			
 			$instructor_add->execute(array("user_id" => $instructor->user_id, "course_id" => $course_id));

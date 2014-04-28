@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 18:24:12
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 06:34:44
          compiled from "/var/www/database/smarty/templates/home/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20923434545332453313b023-72847301%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8e4a69fb2fa99e98085570bedc65ad7f8f9482d4' => 
     array (
       0 => '/var/www/database/smarty/templates/home/index.tpl',
-      1 => 1398637308,
+      1 => 1398681281,
       2 => 'file',
     ),
   ),
@@ -66,7 +66,17 @@ images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100
 	<br />
 	
 	<br />
+
+	<a href="course_list.php">
 	
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">Course List</button>
+	
+	</a>
+	
+	<br />
+	
+	<br />
+
 </div>
 
 <button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>
@@ -75,4 +85,5 @@ images/angelhack.jpg') repeat fixed center 0px transparent; background-size: 100
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>
 <div align="center" style="font-size: 19px;">Derrick Franco</div>
 
-</button><?php }} ?>
+</button>
+<?php }} ?>

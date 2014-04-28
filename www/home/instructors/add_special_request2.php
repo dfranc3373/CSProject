@@ -12,25 +12,13 @@ if(!isset($_POST['course_code']) || !isset($_POST['title']) || !isset($_POST['ju
 	
 }
 
-	$string1 = "vnr3uh43h983hfhhuhf548";//password
-	$string2 = "pleasedontmakeamess";
-	$password = $_POST['password'];
-	$password = md5($password);//md5
-	$password = md5($string1.md5($string1.$password.$string2));//add the extra info
+	$sth = $mysql->prepare("INSERT INTO `special_request` (`user_id`, `course_code`, `title`, `justification`) VALUES (:user_id, :course_code, :title, :justification)");
 
-	$sth = $mysql->prepare("INSERT INTO `users` ('username', 'password', 'firstname', 'lastname', 'email') VALUES (:username, :password, :firstname, :lastname, :email)");
+	$sth->execute(array("user_id" => $_SESSION['user_id'], "course_code" => $_POST'course_code'], "title" => $_POST['title'], "justification" => $_POST['justification']));
 
-	$sth->execute(array("username" => $_POST['username'], "password" => $password, "firstname" => $_POST['firstname'], "lastname" => $_POST['lastname'], "email" => $_POST['email']));
-	
-	$id = $sth->lastInsertId();
-	
-	$instructor = $mysql->prepare("INSERT INTO `instructors` ('user_id', 'type', 'title', 'tenured', 'distribution_preference', 'date_joined') VALUES ('".$id."', :type, :title, :tenured, '1', '".date("m/d/y", time())."')");
-	
-	$instructor->execute(array("username" => $_POST['username'], "password" => $password, "firstname" => $_POST['firstname'], "lastname" => $_POST['lastname'], "email" => $_POST['email']));
-	
-	if($sth && $instructor) {
+	if($sth) {
 		
-		$array = array("message" => "Instructor Added", "InstructorAdded" => "true");
+		$array = array("message" => "Instructor Added", "AddRequest" => "true");
 				
 		echo json_encode($array);
 		
@@ -38,7 +26,7 @@ if(!isset($_POST['course_code']) || !isset($_POST['title']) || !isset($_POST['ju
 		
 	} else {
 		
-		$array = array("message" => "Something Went Wrong Please Contact Support or Try Again", "InstructorAdded" => "false");
+		$array = array("message" => "Something Went Wrong Please Contact Support or Try Again", "AddRequest" => "false");
 				
 		echo json_encode($array);
 		

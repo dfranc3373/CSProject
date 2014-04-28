@@ -37,7 +37,17 @@
 	<br />
 	
 	<br />
+
+	<a href="course_list.php">
 	
+		<button align="center" type="button" class="btn btn-default btn-lg btn-block" style="max-width: 200px;">Course List</button>
+	
+	</a>
+	
+	<br />
+	
+	<br />
+
 </div>
 
 <button align="center" type="button" class="btn btn-warning btn-lg btn-block"><h1>Project for Database Class</h1>

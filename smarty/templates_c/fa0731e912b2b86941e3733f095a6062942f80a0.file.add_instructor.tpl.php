@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-04-27 19:17:55
+<?php /* Smarty version Smarty-3.1.12, created on 2014-04-28 05:26:45
          compiled from "/var/www/database/smarty/templates/home/add_instructor.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17745139355332f8f8de6689-63153642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fa0731e912b2b86941e3733f095a6062942f80a0' => 
     array (
       0 => '/var/www/database/smarty/templates/home/add_instructor.tpl',
-      1 => 1398639054,
+      1 => 1398677201,
       2 => 'file',
     ),
   ),
@@ -22,36 +22,82 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5332f8f8df9c54_26095336')) {function content_5332f8f8df9c54_26095336($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("home/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
-<div align="center">
-
-<h1>Add Instructor</h1>
-
-<div style="width: 800px; font-size: 14px;" align="center">
-	
-	<form method="POST" action="add_instructor2.php">
-
-
-	<table>
-
-	</table>
-
-
 <style>
 .tableinput{ height:25px; width: 150px; margin:2px; margin-left:5px; margin-right:20px; padding:2px; text-align:center;}
 .long{ width:425px;}
 .tablelable{ width:100px; text-align:right; }
 </style>
 
+<script>
 	
+	$( document ).ready(function() {
+		$('#addInstructor').submit(function (event) {
+			event.preventDefault();
+			if (checkValid()==true){
+				sendData();
+			}
+		});
+	});
+	
+	function checkValid(){
+		var valid = true;
+		$( ".tableinput" ).each(function() {
+			if ($( this ).val() == ""){
+				showMsg("Please fill in all fields",false);
+				valid=false;
+			}
+		});
+		return valid;
+	}
+
+	function sendData(){
+		dataString = $("#addInstructor").serialize();
+		$.ajax({
+			type:"POST",
+			url:"./add_instructor2.php",
+			data:dataString,
+			dataType: 'json',
+
+			success:function (data) {
+				showMsg(data.message, data.InstructorAdded );
+			}
+		});
+	}
+	
+	function showMsg(msg, status){
+		var color = "#f00";
+		if (status){
+			color = "#0f0";
+		}
+		
+		$("#results").hide();
+		$("#result").html(msg);
+		$("#result").css({ "background-color": color})
+		$("#results").show("slow");
+	}
+</script>
+
+<div id="result" style="text-align:center;">
+  
+</div>
+
+
+
+<div align="center">
+
+<h1>Add Instructor</h1>
+
+<div style="width: 800px; font-size: 14px;" align="center">
+	
+	<form method="POST" action="add_instructor2.php" id="addInstructor" >
+
+
+	<table>
+
+	</table>
+
 <table>
 	<tr>
-		<td class="tablelable">
-			User ID
-		</td>
-		<td>
-			<input type="text" id="userid" name="userid" class="form-control tableinput">
-		</td>
-		
 		
 		<td class="tablelable">
 			User Name
@@ -118,7 +164,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </table>
 
 
-		<input type="submit" value="Add Professor" class="btn btn-primary" style="margin-top:15px;">
+		<input type="submit" value="Add Professor" class="btn btn-primary" style="margin-top:15px;" id="addProf">
 		
 	</form>
 	
@@ -132,5 +178,4 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div align="center" style="font-size: 19px;">Brian Fairbanks</div>
 <div align="center" style="font-size: 19px;">Derrick Franco</div>
 
-</button>
-<?php }} ?>
+</button><?php }} ?>

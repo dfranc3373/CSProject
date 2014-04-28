@@ -2,13 +2,13 @@
 
 include_once('header.php');
 
-$sth = $mysql->prepare("SELECT * FROM `instructors`");
+$sth = $mysql->prepare("SELECT instructors.*, users.firstname, users.lastname FROM `instructors` LEFT JOIN `users` on users.user_id = instructors.user_id");
 
 $sth->setFetchMode(PDO::FETCH_OBJ);
 
 $sth->execute();
 
-$instructors = $sth->fetch();
+$instructors = $sth->fetchAll();
 
 $smarty->assign("instructors", $instructors);
 

@@ -36,7 +36,9 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="{$nav}index.php">Home</a></li>
-      <li><a href="#">Add Instructor</a></li>
+      <li><a href="add_instructor.php">Add Instructor</a></li>
+      <li><a href="add_course.php">Add Course</a></li>
+      <li><a href="course_list.php">Course List</a></li>
       <li><a href="logout.php">Logout</a></li>
     </ul>
   </div>
